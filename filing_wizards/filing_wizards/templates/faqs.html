@@ -1,0 +1,949 @@
+{% extends 'base.html' %}
+{% load static wagtailcore_tags %}
+
+{% block content %}
+    <div>
+        <div class="overlay padd-tb-40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ol class="breadcrumb">
+                            <li><a href="{% slugurl 'home' %}">Home</a></li>
+                            <li class="active">FAQs</li>
+                        </ol>
+                        <h2 class="color-white">Frequently Asked Questions</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ SECTION -->
+    <div id="faq" class="padd-60x120">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 padd-b-80">
+                    <p class="padd-b-30">
+                        The information below is in response to frequently asked questions that we receive. We update
+                        this information from time to time as we receive additional questions from our clients. In
+                        addition, we also have a tutorial section with more in depth analysis of certain topics. These
+                        materials are designed to provide you with helpful information as you go through the process of
+                        starting or updating your business.
+                    </p>
+                    <p>
+                        If you need further clarification on what type of business might be right for you, or you need
+                        further clarification on where to start your business, we are happy to help any way we can;
+                        however, we strongly encourage you to reach out to an accountant or legal professional. If this
+                        applies to you, please contact us, and we would be happy to help you connect with someone.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="nav nav-tabs bg-gray-light mrg-bottom-40" role="tablist">
+                    <li role="presentation" class="active col-xs-4">
+                        <a href="#llcs" aria-controls="llcs" role="tab" data-toggle="tab"><br class="visible-xs"/>LLCs</a>
+                    </li>
+                    <li role="presentation" class="col-xs-4">
+                        <a href="#corps" aria-controls="corps" role="tab" data-toggle="tab"><br class="visible-xs"/>Corporations</a>
+                    </li>
+                    <li role="presentation" class="col-xs-4">
+                        <a href="#solep" aria-controls="solep" role="tab" data-toggle="tab">Sole Proprietorships</a>
+                    </li>
+                    <li role="presentation" class="col-xs-4">
+                        <a href="#nonprofit" aria-controls="nonprofit" role="tab" data-toggle="tab"><br class="visible-sm visible-xs"/>Nonprofit<br/>Corporations</a>
+                    </li>
+                    <li role="presentation" class="col-xs-4">
+                        <a href="#comparison" aria-controls="comparison" role="tab" data-toggle="tab">Comparing
+                            Different Business Structures</a>
+                    </li>
+                    <li role="presentation" class="col-xs-4">
+                        <a href="#stateinc" aria-controls="stateinc" role="tab" data-toggle="tab"><br class="visible-sm visible-xs"/>Selecting the State<br/> of
+                            Incorporation</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane border active" id="llcs">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="accordion-two">
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                                       href="#collapseOne" aria-expanded="true"
+                                                       aria-controls="collapseOne">
+							        	<span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+										</span>
+                                                        What is an LLC?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                                 aria-labelledby="headingOne">
+                                                <div class="panel-body">
+                                                    A limited liability company (LLC) is a form of business entity that
+                                                    is separate and distinct from a person, like a corporation. The LLC
+                                                    is often described as being a mix between a corporation and a
+                                                    partnership (or sole proprietorship), offering some of the features
+                                                    of each. For instance, similar to corporations, an LLC allows for
+                                                    limited liability protection of its owner(s) (i.e. your risk is
+                                                    limited to the amount that is invested in the LLC, and personal
+                                                    assets beyond that are usually protected). And similar to a
+                                                    partnership (or sole proprietorship), an LLC allows for pass through
+                                                    taxation from the business to the owners. In short, an LLC is
+                                                    advantageous if you are looking to receive some of the benefits that
+                                                    corporations receive, but with fewer ongoing formalities and
+                                                    obligations.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingTwo">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#collapseTwo"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseTwo">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        How is an LLC formed?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                                 aria-labelledby="headingTwo">
+                                                <div class="panel-body">
+                                                    Generally, the owner(s) must file an articles of organization with
+                                                    the state in which their business is based, along with other
+                                                    paperwork that varies from state to state.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingThree">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#collapseThree"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseThree">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        How are LLCs taxed?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                                 aria-labelledby="headingThree">
+                                                <div class="panel-body">
+                                                    This is one of the most important benefits of an LLC. For federal
+                                                    income tax purposes, the profits/losses of an LLC "pass through" to
+                                                    the personal income of the owner(s). That is, LLC’s are not taxed at
+                                                    the entity level. Instead, the owner(s) are individually taxed when
+                                                    the LLC’s income or loss is “passed through” the business and
+                                                    reported on the owner’s individual tax return. The specifics of how
+                                                    the owner(s) file their taxes with the IRS depend on whether the LLC
+                                                    has a single owner, or multiple owners.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingFour">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#collapseFoure"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseThree">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        What is an Operating Agreement for an LLC?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseFoure" class="panel-collapse collapse" role="tabpanel"
+                                                 aria-labelledby="headingFour">
+                                                <div class="panel-body">
+                                                    The operating agreement is an internal contract amongst the owners
+                                                    of the LLC, and lays out a number of specific details, such as the
+                                                    owner’s respective ownership percentages and responsibilities,
+                                                    accounting methods to be used in connection with profits/losses,
+                                                    rules for adding or removing owners of the LLC, terms for ending the
+                                                    LLC, etc. Most states do not require the LLC to prepare an Operating
+                                                    Agreement (with the exception of New York, which does require it).
+                                                    However, it is strongly advised, as the Operating Agreement can be
+                                                    incredibly important in helping to resolve conflict amongst owners.
+                                                    Please contact us for help in preparing an Operating Agreement for
+                                                    your LLC.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingEleven">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#headingFive"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseThree">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        Do LLCs have by-laws?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="headingFive" class="panel-collapse collapse" role="tabpanel"
+                                                 aria-labelledby="headingFive">
+                                                <div class="panel-body">
+                                                    LLC’s are governed by operating agreements, not by-laws. Only a few
+                                                    states require that an LLC’s operating agreement be filed with the
+                                                    state. However, it is still an extremely important document because
+                                                    it sets forth in writing the structure and day-to-day rules of your
+                                                    corporation, and provide comprehensive guidelines for keeping things
+                                                    running smoothly. Please contact us for help in preparing an
+                                                    Operating Agreement for your
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane border" id="corps">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="accordion-two">
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                                       href="#collapseCorpOne" aria-expanded="true"
+                                                       aria-controls="collapseOne">
+							        	<span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+										</span>
+                                                        What is a C Corporation?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseCorpOne" class="panel-collapse collapse in" role="tabpanel"
+                                                 aria-labelledby="headingOne">
+                                                <div class="panel-body">
+                                                    The "C" in C Corporation refers to a subchapter of the tax code.
+                                                    Because C Corporations are quite common, they are often referred to
+                                                    simply as “corporations.” One of the most important benefits to a C
+                                                    Corporation is the limited liability protection that owners
+                                                    (shareholders) receive. Under this protection, each shareholder’s
+                                                    personal liability for the corporation’s business debts is limited
+                                                    to the amount they invest (personal assets beyond this amount are
+                                                    usually protected). However, there are certain downsides to forming
+                                                    a C Corporation. Notably, C Corporations do not allow for the “pass
+                                                    through” of the business’s taxes to the individual shareholders. As
+                                                    a result, the C Corporation is taxed on the entity level, and then
+                                                    the shareholders are taxed again in an individual capacity – a
+                                                    feature that is often referred to as “double taxation.” C
+                                                    Corporations are also distinguished from other entity types by the
+                                                    formality with which certain obligations must be performed by the
+                                                    members shareholders, such as in relation to shareholder meetings,
+                                                    annual income reporting, and tax submissions.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingTwo">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#collapseCorpTwo"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseTwo">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        How is a C Corporation formed?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseCorpTwo" class="panel-collapse collapse" role="tabpanel"
+                                                 aria-labelledby="headingTwo">
+                                                <div class="panel-body">
+                                                    Generally, the owner(s) must file the “articles of incorporation” or
+                                                    “certificate of formation” with the state government in which their
+                                                    business is located, along with other paperwork that varies from
+                                                    state to state, and the payment of an appropriate filing fee. Please
+                                                    contact us for assistance in forming your C Corporation.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingThree">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#collapseCorpThree"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseThree">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        What is an S Corporation?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseCorpThree" class="panel-collapse collapse" role="tabpanel"
+                                                 aria-labelledby="headingThree">
+                                                <div class="panel-body">
+                                                    An S Corporation is a type of corporation that has a special tax
+                                                    status with the IRS. The formation requirements are similar to that
+                                                    of C Corporations, but with the addition of a special form – IRS
+                                                    Form 2553 – that must then be filed in order to have the government
+                                                    recognize your business’s status as an S Corporation. This special
+                                                    tax status eliminates the double-taxation that can occur with a C
+                                                    corporation’s income. As a result, business profits or losses
+                                                    "pass-through" to shareholders and are then reported on their
+                                                    individual tax returns. Any tax due is paid by shareholders at their
+                                                    individual tax rates, and no tax is paid at the corporate level.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingFour">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#collapseCorpFoure"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseThree">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        What is a Registered Agent?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseCorpFoure" class="panel-collapse collapse" role="tabpanel"
+                                                 aria-labelledby="headingFour">
+                                                <div class="panel-body">
+                                                    Virtually all states require corporations to have a registered agent
+                                                    in the state of incorporation. The registered agent receives
+                                                    important legal and tax documents for the corporation (including
+                                                    important mail sent by the state, such as annual reports or
+                                                    statements, tax documents, and service of process relating to
+                                                    lawsuits), must have a physical address (no P.O. Boxes) in the state
+                                                    of incorporation, and be available during normal business hours.
+                                                    Post office boxes and private rented mailboxes are NOT permissible
+                                                    for this purpose. Registered agents are not only required by most
+                                                    entity types, but they are also very helpful in ensuring that
+                                                    important documents are professionally and discreetly handled. It is
+                                                    for this reason that almost all businesses use a registered agent
+                                                    service. Please contact us for assistance in obtaining a Registered
+                                                    Agent.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingEleven">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#collapseCorpFive"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseThree">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        What is Share Par Value?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseCorpFive" class="panel-collapse collapse" role="tabpanel"
+                                                 aria-labelledby="headingFive">
+                                                <div class="panel-body">
+                                                    Share par value. The par value of a share is its minimum stated
+                                                    value and common par values are $0.01, $1.00 or no par. The actual
+                                                    value of a share is its fair market value, or what someone is
+                                                    willing to pay for it. For public companies, actual value is
+                                                    determined by the price that investors are willing to pay for each
+                                                    share on a national exchange. For private companies, the actual
+                                                    value is typically determined by the overall corporation value or
+                                                    book value.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingTwelve">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#collapseCorpSix"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseThree">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        What are Preferred Shares?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseCorpSix" class="panel-collapse collapse" role="tabpanel"
+                                                 aria-labelledby="headingFive">
+                                                <div class="panel-body">
+                                                    C Corporations may have more than one type of stock. If a
+                                                    corporation plans to authorize both common and preferred shares of
+                                                    stock, this must be included (along with voting rights information)
+                                                    in the Articles of Incorporation. Preferred shares typically give
+                                                    shareholders preferential payments of dividends or distribution of
+                                                    assets, if the company ends operations. And please remember – it is
+                                                    not possible to define preferred shares verses common shares for S
+                                                    Corporations, since they only have one type of share.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingThirteen">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#collapseCorpSeven"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseThree">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        What is the “Articles of Incorporation” for a Corporation?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseCorpSeven" class="panel-collapse collapse" role="tabpanel"
+                                                 aria-labelledby="collapseCorpSeven">
+                                                <div class="panel-body">
+                                                    Sometimes referred to as a “certificate of formation”, this document
+                                                    provides the state with necessary information on your business. The
+                                                    information included on this document will become publically
+                                                    available, and can be accessed by anyone. It must include: 1) your
+                                                    desired corporate name; 2) the purpose of your business; 3) the
+                                                    identification of your registered agent; 4) the identification of
+                                                    the incorporator, who is a person or company preparing and filing
+                                                    the articles of organization 5) the number of authorized shares of
+                                                    stock you plan on having; 6) the share par value; 7) whether there
+                                                    are any preferred shares, and if so, voting rights (it is not
+                                                    possible to identify this for S Corporations). The way to satisfy
+                                                    these requirements may vary from state to state – for example, some
+                                                    states require that the purpose of your business be stated in a very
+                                                    general way to indicate that the business is formed to engage in
+                                                    “all lawful business,” while other states require a more specific
+                                                    explanation of the products and/or services your company will
+                                                    provide. Please contact us for assistance in preparing your Articles
+                                                    of Incorporation
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="collapseCorpEight">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#collapseCorpEight"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseThree">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        What are corporate by-laws?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseCorpEight" class="panel-collapse collapse" role="tabpanel"
+                                                 aria-labelledby="headingFive">
+                                                <div class="panel-body">
+                                                    Corporate by-laws outline in writing the structure and day-to-day
+                                                    rules of your corporation, and provide comprehensive guidelines for
+                                                    keeping things running smoothly. One important role of the by-laws
+                                                    is to specify the duties and responsibilities of a corporation’s
+                                                    board of directors, executive committee members, and other important
+                                                    individuals. The by-laws also determine how those in charge are
+                                                    nominated or elected, and they help settle any disputes among
+                                                    parties. Since it is such an important document, corporate by-laws
+                                                    they must be formally adopted, and formally amended when there are
+                                                    any changes. It is very important that bylaws be customized to your
+                                                    organization’s needs. Please contact us for assistance in preparing
+                                                    by-laws for your business.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="collapseCorpEight">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#collapseCorpNine"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseThree">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        What is the difference between corporate by-laws and the
+                                                        Articles of Incorporation?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseCorpNine" class="panel-collapse collapse" role="tabpanel"
+                                                 aria-labelledby="headingFive">
+                                                <div class="panel-body">
+                                                    The Articles of Incorporation state the basic outline of the company
+                                                    and generally provide information such as the name of the person
+                                                    organizing the corporation; the number of shares the corporation can
+                                                    issue, if applicable; the names of the corporation's Board of
+                                                    Directors; and the location of the corporation. By-laws go into
+                                                    detail about the corporation’s operations and structure, and covers
+                                                    such topics as how the Board of Directors and/or officers are
+                                                    elected, how meetings are conducted, and the types and duties of
+                                                    officers.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane border" id="solep">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="accordion-two">
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                                       href="#collapseSolepOne" aria-expanded="true"
+                                                       aria-controls="collapseOne">
+							        	<span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+										</span>
+                                                        What is a Sole Proprietorship?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseSolepOne" class="panel-collapse collapse in"
+                                                 role="tabpanel"
+                                                 aria-labelledby="headingOne">
+                                                <div class="panel-body">
+                                                    The sole proprietorship is the simplest business. A sole
+                                                    proprietorship is not a legal entity, but instead refers to the
+                                                    person who owns the business and who is primarily responsible for
+                                                    its debts. In some states, it is referred to as a “DBA” (doing
+                                                    business as).
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingTwo">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#collapseSolepTwo"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseTwo">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        How can I create a Sole Proprietorship?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseSolepTwo" class="panel-collapse collapse" role="tabpanel"
+                                                 aria-labelledby="headingTwo">
+                                                <div class="panel-body">
+                                                    The process is relatively straightforward and inexpensive. To start
+                                                    a sole proprietorship, you do not need to file any papers. Instead,
+                                                    you simply go into business. In other words, if you'll be the only
+                                                    owner of the business you're starting, your business will
+                                                    automatically be a sole proprietorship, unless you incorporate it or
+                                                    organize it as an LLC. However, it is extremely important that you
+                                                    do not neglect any business licenses, permits, and taxes, as these
+                                                    types of business filings are still required!
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingThree">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#collapseSolepThree"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseThree">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        Can I change my Sole Proprietorship to another business type?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseSolepThree" class="panel-collapse collapse" role="tabpanel"
+                                                 aria-labelledby="headingThree">
+                                                <div class="panel-body">
+                                                    Of course! Many people who start their business as a sole
+                                                    proprietorship do so because it is very straightforward and
+                                                    uncomplicated. However, in the event your business has more than one
+                                                    owner, or in the event your business has become well established,
+                                                    you should strongly consider migrating to another entity type, such
+                                                    as an LLC or a Corporation. Please contact us for assistance in
+                                                    converting your sole proprietorship to another business type.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane border" id="nonprofit">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="accordion-two">
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                                       href="#collapseNonProfitOne" aria-expanded="true"
+                                                       aria-controls="collapseOne">
+							        	<span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+										</span>
+                                                        What are the requirements for the formation of a Nonprofit
+                                                        Corporation?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseNonProfitOne" class="panel-collapse collapse in"
+                                                 role="tabpanel"
+                                                 aria-labelledby="headingOne">
+                                                <div class="panel-body">
+                                                    As with a for-profit corporation, the formation document is
+                                                    generally referred to as the Articles of Incorporation (or sometimes
+                                                    as the Certificate of Incorporation). Each state has its own version
+                                                    of the Articles of Incorporation, but much of the requested
+                                                    information is consistent across the states. To prepare the Articles
+                                                    of Incorporation, you will need to provide the name of your
+                                                    business, the purpose of your business, a registered agent, and
+                                                    choose an incorporator, director and officers. In other words, the
+                                                    process is extremely similar to the process for the other types of
+                                                    Corporations discussed above. Please contact us for assistance in
+                                                    forming your non-profit.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingTwo">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#collapseNonProfitTwo"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseTwo">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        What type of purpose is acceptable for a Nonprofit Corporation?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseNonProfitTwo" class="panel-collapse collapse"
+                                                 role="tabpanel"
+                                                 aria-labelledby="headingTwo">
+                                                <div class="panel-body">
+                                                    The most common type of nonprofit business is referred to as a
+                                                    501(c)(3). A 501(c)(3) is a public charity or private foundation
+                                                    that is established for the purpose of providing religious,
+                                                    educational, scientific, literary, or other charitable services.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane border" id="comparison">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="accordion-two">
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                                       href="#collapseComparisonOne" aria-expanded="true"
+                                                       aria-controls="collapseOne">
+							        	<span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+										</span>
+                                                        Why might the LLC be the right type of business for you?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseComparisonOne" class="panel-collapse collapse in"
+                                                 role="tabpanel"
+                                                 aria-labelledby="headingOne">
+                                                <div class="panel-body">
+                                                    There are a number of reasons why an LLC might be right for you. For
+                                                    instance, LLCs typically offer a good amount of flexibility in terms
+                                                    of how the business is structured and managed. In this regard, LLCs
+                                                    do not face strict ongoing requirements regarding meetings (i.e.,
+                                                    there is no requirement that there be an annual meeting of directors
+                                                    or shareholders, or that meeting minutes be recorded). There are
+                                                    many other benefits as well, as you can read in our other FAQs and
+                                                    Tutorials.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingTwo">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#collapseComparisonTwo"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseTwo">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        Why might the C Corporation be the right type of business for
+                                                        you?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseComparisonTwo" class="panel-collapse collapse"
+                                                 role="tabpanel"
+                                                 aria-labelledby="headingTwo">
+                                                <div class="panel-body">
+                                                    C Corporations offer a great deal of flexibility in terms of the
+                                                    number and types of owners. It is for this reason that majority of
+                                                    the big companies you’ve heard of are C Corporations. C Corporations
+                                                    also offer flexibility in terms of classes of stock, making them
+                                                    attractive for potential investors, or as an incentive to potential
+                                                    employees relating to stock options. Also, C Corporations allow
+                                                    shareholders to avoid “double taxation” associated with other
+                                                    business types. There are many other benefits as well, as you can
+                                                    read in our other FAQs and Tutorials.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingThree">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#collapseComparisonThree"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseThree">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        What are the disadvantages of forming an S Corporation?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseComparisonThree" class="panel-collapse collapse"
+                                                 role="tabpanel"
+                                                 aria-labelledby="headingThree">
+                                                <div class="panel-body">
+                                                    S Corporations have certain features that may make them unfavorable
+                                                    in certain situations. For example, S Corporations can only have one
+                                                    class of stock. As a result of this limitation, there cannot be
+                                                    different classes of investors entitled to different types of rights
+                                                    or different dividend amounts, which is something that may be
+                                                    important if you are trying to get investors for your business
+                                                    (people who invest first, or invest a lot of money, often would like
+                                                    to receive higher dividend rates, or greater rights, in exchange for
+                                                    investing first). Additionally, S Corporations cannot have more than
+                                                    100 shareholders. Also ownership (i.e., foreign ownership) is
+                                                    prohibited. So while avoiding double taxation is great, an S
+                                                    Corporation might not be right for you.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingFour">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#collapseComparisonFoure"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseThree">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        What are some of the differences between LLCs and S Corps?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseComparisonFoure" class="panel-collapse collapse"
+                                                 role="tabpanel"
+                                                 aria-labelledby="headingFour">
+                                                <div class="panel-body">
+                                                    <p>
+                                                        S Corporations have more formalities in terms of their
+                                                        day-to-day operating requirements. For example, S Corporations
+                                                        must adopt bylaws, issue stock, hold initial and annual director
+                                                        and shareholder meetings, and keep meeting minutes with
+                                                        corporate records. Alternatively, LLCs have “recommended”
+                                                        formalities for their day-to-day operating requirements, such as
+                                                        adopting an operating agreement, issuing membership shares,
+                                                        holding and documenting annual member meetings and documenting
+                                                        all major company decisions. In short, LLC’s don’t need to do
+                                                        anywhere near as much as S Corporations.
+                                                    </p>
+                                                    <p>
+                                                        Additionally, LLC’s have a choice as far as how the business is
+                                                        managed. If managed by members (i.e., owners), then the LLC
+                                                        operates much like a partnership. If run by managers, then the
+                                                        LLC more closely resembles a corporation, and members will not
+                                                        be involved in the daily business decisions. On the other hand,
+                                                        S Corporations have directors and officers. The directors
+                                                        oversee corporate affairs and handle major decisions, but do not
+                                                        get involved in daily operations. Instead, directors elect
+                                                        officers who manage daily business affairs.
+                                                    </p>
+                                                    <p>
+                                                        Another difference relates to the existence of the business. S
+                                                        corporations can exist forever. However, for LLC’s, some states
+                                                        require the LLC to list a dissolution date (i.e., end date) of
+                                                        the business in the formation documents. Also, for LLC’s, some
+                                                        events, such as the death or withdrawal of a member, can cause
+                                                        the LLC to dissolve.
+                                                    </p>
+                                                    <p>
+                                                        Also, in terms of ownership transfers, the stock of an S
+                                                        Corporation is freely transferable, as long as certain IRS
+                                                        ownership restrictions are met. So there is a great amount of
+                                                        flexibility in terms of who can be an owner of an S Corporation.
+                                                        However, LLC members cannot freely transfer their ownership
+                                                        stake in the business without obtaining approval first in most
+                                                        cases. Thus, LLC’s are much more restrictive in terms of
+                                                        ownership changes.
+                                                    </p>
+                                                    <p>
+                                                        These are but a few of the many differences between an S
+                                                        Corporation and an LLC. If you need further clarification on
+                                                        what type of business might be right for you, we are happy to
+                                                        help any way we can; however, we strongly encourage you to reach
+                                                        out to an accountant or legal professional. If this applies to
+                                                        you, please contact us, and we would be happy to help you
+                                                        connect with someone.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane border" id="stateinc">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="accordion-two">
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                <h4 class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                                       href="#collapseStateIncOne" aria-expanded="true"
+                                                       aria-controls="collapseOne">
+							        	<span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+										</span>
+                                                        Should I incorporate in my home state, or should I incorporate
+                                                        in a different state?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseStateIncOne" class="panel-collapse collapse in"
+                                                 role="tabpanel"
+                                                 aria-labelledby="headingOne">
+                                                <div class="panel-body">
+                                                    Many people choose to incorporate their business in the state in
+                                                    which their company is physically located. This is called “home
+                                                    state incorporation.” No matter what entity you choose (LLC, C Corp,
+                                                    S Corp, Not for Profit Corp., etc.), you must pay filing fees to the
+                                                    state of your choosing when the incorporation documents are filed.
+                                                    Additionally, you will be subject to ongoing requirements and fees
+                                                    imposed by the home state of your business. If your business
+                                                    operates nationally, this may be a complicated question requiring a
+                                                    focused analysis – please contact us and we would be happy to help
+                                                    you connect with the appropriate accounting or legal professional.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingTwo">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#collapseStateIncTwo"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseTwo">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        Do I need to register my business as a foreign entity?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseStateIncTwo" class="panel-collapse collapse"
+                                                 role="tabpanel"
+                                                 aria-labelledby="headingTwo">
+                                                <div class="panel-body">
+                                                    Companies that are incorporated in one state but doing business in
+                                                    another state(s) must register to transact business as a foreign
+                                                    entity in those state(s).
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading" role="tab" id="headingThree">
+                                                <h4 class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse"
+                                                       data-parent="#accordion" href="#collapseStateIncThree"
+                                                       aria-expanded="false"
+                                                       aria-controls="collapseThree">
+							            <span class="panel-icon">
+											<i class="fa fa-question-circle"></i>
+									    </span>
+                                                        If my business has offices in many states, how do I decide which
+                                                        state should be the home state for my business?
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseStateIncThree" class="panel-collapse collapse"
+                                                 role="tabpanel"
+                                                 aria-labelledby="headingThree">
+                                                <div class="panel-body">
+                                                    In order to determine which state will be the best state for your
+                                                    business, you should research that state’s laws and tax requirements
+                                                    related to Corporations, LLCs, and other types of businesses. For
+                                                    example, if foreign qualification will be necessary, you may want to
+                                                    consider whether a state imposes an income tax on corporations and
+                                                    LLCs, as well as whether there is a minimum tax or a franchise tax.
+                                                    This is important to consider because the added costs of fulfilling
+                                                    the ongoing filing and taxation requirements imposed by the state of
+                                                    incorporation and state(s) of foreign qualification often outweigh
+                                                    the perceived benefits of incorporating outside the home state. You
+                                                    may also want to consider calculating your company's projected
+                                                    revenue for its first few years of existence and then evaluate
+                                                    states in terms of the true amount of taxes required, to see if
+                                                    there may be an advantage. These are often complicated
+                                                    considerations that require the assistance of a tax professional or
+                                                    attorney.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.NAV TABS -->
+
+            </div>
+        </div>
+    </div>
+    <!-- /.END FAQ SECTION -->
+{% endblock content %}

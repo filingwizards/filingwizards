@@ -1,0 +1,198 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block page_banner %}{% endblock %}
+
+{% block content %}
+
+    <!-- MAIN CONTENT START HERE -->
+    <div id="service" class="padd-tb-40 ">
+        <div class="container">
+            <div class="row">
+                <!-- SINGLE ITEM HERE -->
+                <div class="col-xs-8 col-xs-offset-2">
+                    <h2 class="black text-center padd-b-40">
+                        What is Filing Wizards?
+                    </h2>
+                    <p>
+                        Filing Wizards was created by two ivy-league educated lawyers for the purpose of offering high
+                        quality, low cost filing services to small businesses and start-ups. As the owners of a
+                        successful small business ourselves, we understand these needs and concerns, and appreciate how
+                        important it is to get your business up and running as quickly and cost-efficiently as possible.
+                        Whether you are just starting your business, or your business is already underway, we know we
+                        can help.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MAIN CONTENT START HERE -->
+    <div class="padd-t-60 padd-b-20 bg-gray-light">
+        <div class="container">
+            <div class="row">
+                <!-- SINGLE ITEM HERE -->
+                <div class="col-xs-8 col-xs-offset-2">
+                    <h2 class="black text-center padd-b-40">
+                        The Three Essential Components of Filing Wizards’ Business Model
+                    </h2>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-single-icon text-center mrg-bottom-80">
+                        <div class="thumbnail">
+                            <img src="{% static 'images/business/03.png' %}" alt="business">
+                        </div>
+                        <h4 class="mrg-bottom-20"><a href="#">Excellent Customer Service</a></h4>
+                        <p>
+                            At Filing Wizards, we understand that starting up or modifying your business can be a
+                            confusing process. That’s why we’ve dedicated hard work to ensuring that our customer
+                            service is the best that’s out there. Please contact us to see for yourself.
+                        </p>
+                        <div class="icon-circle">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="arrow-long">
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-single-icon text-center mrg-bottom-80">
+                        <div class="thumbnail">
+                            <img src="{% static 'images/business/02.png' %}" alt="business">
+                        </div>
+                        <h4 class="mrg-bottom-20"><a href="#">Comprehensive Service Packages</a></h4>
+                        <p>
+                            At Filing Wizards, we offer a variety of comprehensive service packages and individual
+                            services designed to meet your needs. Find the right plan for your business today.
+                        </p>
+                        <div class="icon-circle">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="arrow-long">
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-single-icon text-center mrg-bottom-80">
+                        <div class="thumbnail">
+                            <img src="{% static 'images/business/04.png' %}" alt="business">
+                        </div>
+                        <h4 class="mrg-bottom-20"><a href="#">Low Costs - High Quality</a></h4>
+                        <p>
+                            Many businesses want a higher level of service than that offered by our online competitors,
+                            but are unable to pay the high fees charged by law firms. That’s where Filing Wizards comes
+                            in – we’re the middle ground for those looking for improved service at reduced costs.
+                        </p>
+                        <div class="icon-circle">
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
+                        <div class="arrow-long">
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.END SINGLE ITEM -->
+            </div>
+        </div>
+    </div>
+
+    <div class="service padd-t-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-xs-12">
+                    <!-- SECTION HEADING -->
+
+                    <div class="title text-center">
+                        <div class="padd-20x15">
+                            <h2 class="color-black">How to Get Started</h2>
+                        </div>
+                        <p class="mrg-bottom-40">Working with Filing Wizards is easy. Go to our <a
+                                href="{% url 'services' %}">services</a> page to select the type of filing service
+                            you need, provide your contact information, and one of our representatives will contact
+                            you as soon as possible. If you are unsure what services you need, please go directly to the
+                            <a href="{% url 'contact' %}">contact page</a>, provide the requested information, and one
+                            of our representatives will contact you as soon as possible.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <!-- SINGLE ITEM HERE -->
+                <div class="col-md-6">
+                    <div class="service-item border mrg-bottom-80">
+                        <div class="title">
+                            <div class="font-icon">
+                                <i class="glyph-icon flaticon-piggy-bank"></i>
+                            </div>
+                            <h5 class="inline"><a href="{% url 'services' %}">Individual Services</a></h5>
+                        </div>
+                        <ul>
+                            <li>
+                                You pick the individual services depending on your business’s needs.
+                            </li>
+                            <li>
+                                Only pay for what you need, nothing more and nothing less.
+                            </li>
+                            <li>
+                                Easy online checklist to let us know what you want.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item border mrg-bottom-80">
+                        <div class="title">
+                            <div class="font-icon">
+                                <i class="glyph-icon flaticon-coin-3"></i>
+                            </div>
+                            <h5 class="inline"><a href="{% url 'services' %}">Service Packages</a></h5>
+                        </div>
+                        <ul>
+                            <li>
+                                Comprehensive packages designed to meet the needs of the typical new business.
+                            </li>
+                            <li>
+                                Bundling of services allow you to save costs
+                            </li>
+                            <li>
+                                Easy to understand drop down menus to help you understand your options
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center padd-b-40">
+        <a class="btn btn-primary btn-lg" href="{% url 'services' %}">
+            Click here to select services
+        </a>
+    </div>
+
+    {#    <!-- CALL TO ACTION SECTION -->#}
+    {#    <div id="call-to-action" class="bg-img-2">#}
+    {#        <div class="overlay padd-tb-80">#}
+    {#            <div class="container">#}
+    {#                <div class="row">#}
+    {#                    <div class="col-md-8 col-sm-12">#}
+    {#                        <h2>Working with Filing Wizards is easy<br> view our services to get started!</h2>#}
+    {#                    </div>#}
+    {#                    <div class="col-md-4 col-sm-12 text-right res-center">#}
+    {#                        <a href="{% url 'services' %}" class="btn btn-default res-mrg-top-20">Services</a>#}
+    {#                    </div>#}
+    {#                </div>#}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </div>#}
+    <!-- /.END CALL TO ACTION -->
+{% endblock %}

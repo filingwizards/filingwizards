@@ -1,0 +1,36 @@
+{% load static wagtailcore_tags %}
+
+<!-- FOOTER SECTION -->
+<footer id="footer" class="bg-white">
+    <div class="footer">
+        <div class="secondary-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-md-push-5">
+                        <ul class="footer-menu text-right">
+                            <li><a href="{% url 'terms' %}">Terms & Conditions</a></li>
+                            <li><a href="{% url 'privacy-policy' %}">Privacy Policy</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+                        <div class="text-right footer-social">
+                         <a href="https://www.facebook.com/filingwizards/" target="_blank">
+                             <i class="fa fa-facebook"></i>
+                         </a>
+                                <a href="https://twitter.com/filingwizards">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#"><i class="fa fa fa-linkedin"></i></a>
+                            </div>
+                    </div>
+                    <div class="col-md-5 col-md-pull-7">
+                        <p class="copyright">
+                            <a href="{% slugurl 'home' %}">Filing Wizards</a> Copyright © 2017. All Rights Reserved.<br/>Website by <a href="http://tangeriin.com" target="_blank">Tangeriin</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /.FOOTER SECTION -->

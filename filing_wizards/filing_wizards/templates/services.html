@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static wagtailcore_tags %}
+
+{% block content %}
+    <!-- PAGE TITLE START HERE -->
+    <div>
+        <div class="overlay padd-tb-40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ol class="breadcrumb">
+                            <li><a href="{% slugurl 'home' %}">Home</a></li>
+                            <li class="active">Plans</li>
+                        </ol>
+                        <h2 class="color-white">Our Service Packages</h2>
+                        <p class="color-white mrg-top-20">Select a package or pay as you go!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END PAGE TITLE -->
+
+    <div class="body-content">
+        <div id="about" class="padd-tb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-12 res-mrg-50 res-center">
+
+                        <p class="mrg-bottom-20">
+                            Below you will find various categories of service we currently offer. Please select the
+                            services and/or packages you are interested in and add it to your shopping cart. If you do
+                            not see a type of filing service that you need assistance with, simply contact us – we may
+                            still be able to help you.
+                        </p>
+                        <p class="mrg-bottom-20">
+                            Once you have completed selecting services, simply click “checkout” to finalize your order.
+                            At that time, we will ask you to enter additional information relating to billing and other
+                            items. Once we have had a chance to review the information provided, one of our Filing
+                            Wizards representatives will likely contact you – so please make sure to check your e-mail
+                            and/or voicemail and be on the lookout for communications from the team at Filing Wizards.
+                            As for billing, please note that you will not be billed until we actually begin the
+                            preparation of your filing, and that none of the fees mentioned on this site include
+                            additional government fees that will need to be submitted along with your filing.
+                        </p>
+                        <p class="mrg-bottom-20">
+                            If you have any questions, please do not hesitate to contact us. In the meanwhile, we look
+                            forward to working with you and helping you with your business filing needs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="padd-t-60 padd-b-20 bg-gray-light">
+            <div class="container">
+
+                <div class="row">
+                <!-- SINGLE ITEM HERE -->
+                <div class="col-md-6">
+                    <div class="service-item border mrg-bottom-80">
+                        <div class="title">
+                            <h5 class="inline"><a href="{% url 'llc-services' %}">Business Formation and Maintenance</a></h5>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="{% url 'llc-services' %}">
+                                    LLC's
+                                </a>
+                            </li>
+                            <li>
+                                Corporations
+                            </li>
+                            <li>
+                                Partnerships
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="service-item border mrg-bottom-80">
+                        <div class="title">
+                            <h5 class="inline"><a href="">Trademark Formation and Maintenance</a></h5>
+                        </div>
+                        <ul>
+                            <li>
+                                Trademark Filing Services and Packages
+                            </li>
+                            <li>
+                                Previously Registered Trademark Services<br/><span class="small">(If Your Trademark Is Already Registered)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

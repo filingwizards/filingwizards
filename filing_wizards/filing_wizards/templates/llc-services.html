@@ -1,0 +1,447 @@
+{% extends 'base.html' %}
+{% load static wagtailcore_tags %}
+
+{% block content %}
+<!-- PAGE TITLE START HERE -->
+<div>
+    <div class="overlay padd-tb-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ol class="breadcrumb">
+                        <li><a href="{% slugurl 'home' %}">Home</a></li>
+                        <li class="active">Plans</li>
+                    </ol>
+                    <h2 class="color-white">LLC's Service Packages</h2>
+                    <p class="color-white mrg-top-20">Select a package or pay as you go!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PAGE TITLE -->
+
+<div class="body-content">
+    <div id="opened-positions" class="job-board full-width">
+        <div class="container bg-gray-light">
+            <div class="row">
+                <div class="col-xs-12 bg-gray-light padd-60x120">
+                    <div class="mrg-right-50 table-responsive">
+                        <table class="table">
+                            <thead class="job-title res-center">
+                                <th class="col-sm-4 col-xs-4">
+                                    <h5 class="color-black">Features</h5>
+                                    <div class="mrg-bottom-80">
+                                        <small></small>
+                                    </div>
+                                </th>
+                                <th class="col-xs-2 text-center">
+                                    <h5 class="color-black">Price of Service</h5>
+                                    <div class="mrg-bottom-80">
+                                        <small></small>
+                                    </div>
+                                </th>
+                                <th class="col-xs-2 text-center">
+                                    <h5 class="color-black">Individual</h5>
+                                    <div class="mrg-bottom-20 mrg-top-40">
+                                        <h2 class="color-blue"></h2>
+                                        <small>(50% off)</small>
+                                    </div>
+                                </th>
+                                <th class="col-xs-1 text-center">
+                                    <h5 class="color-black">Standard</h5>
+                                    <div class="mrg-bottom-20 mrg-top-20">
+                                        <h2 class="color-blue">$63</h2>
+                                        <small>(10% off)</small>
+                                    </div>
+                                </th>
+                                <th class="col-xs-1 text-center">
+                                    <h5 class="color-black">Silver</h5>
+                                    <div class="mrg-bottom-20 mrg-top-20">
+                                        <h2 class="color-blue">$283</h2>
+                                        <small>(13% off)</small>
+                                    </div>
+                                </th>
+                                <th class="col-xs-1 text-center">
+                                    <h5 class="color-black">Gold</h5>
+                                    <div class="mrg-bottom-20 mrg-top-20">
+                                        <h2 class="color-blue">$404</h2>
+                                        <small>(15% off)</small>
+                                    </div>
+                                </th>
+                                <th class="col-xs-1 text-center">
+                                    <h5 class="color-black">Platinum</h5>
+                                    <div class="mrg-bottom-20 mrg-top-20">
+                                        <h2 class="color-blue">$476</h2>
+                                        <small>(22% off)</small>
+                                    </div>
+                                </th>
+                            </thead>
+                            <tr class="row single-job padd-tb-10">
+                                <td class="col-sm-4 col-xs-4">
+                                    <p><a href="#">Conduct Name Search and Verify Name Availability</a></p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <p class="color-black">$20</p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                            </tr>
+                            <tr class="row single-job padd-tb-10">
+                                <td class="col-sm-4 col-xs-4">
+                                    <p><a href="#">Prepare and File Articles of Organization For Your Business</a></p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <p class="color-black">$50</p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                            </tr>
+                            <tr class="row single-job padd-tb-10">
+                                <td class="col-sm-4 col-xs-4">
+                                    <p><a href="#">Standard 7-10 Business Day Turnaround for Preparation and Submission
+                                        of
+                                        Initial Business Filing</a></p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <p class="color-black">N/A</p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <h5 class="color-black">Included</h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                            </tr>
+                            <tr class="row single-job padd-tb-10">
+                                <td class="col-sm-4 col-xs-4">
+                                    <p><a href="#">Expedited 3-5 Day Turnaround for Submission of Initial Business
+                                        Filing</a>
+                                    </p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <p class="color-black">$55</p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                            </tr>
+                            <tr class="row single-job padd-tb-10">
+                                <td class="col-sm-4 col-xs-4">
+                                    <p><a href="#">Prepare and File Application for Federal Tax ID Number</a></p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <p class="color-black">$70</p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                            </tr>
+                            <tr class="row single-job padd-tb-10">
+                                <td class="col-sm-4 col-xs-4">
+                                    <p><a href="#">Prepare Customized Operating Agreement & File In Appropriate
+                                        States</a></p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <p class="color-black">$185</p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                            </tr>
+                            <tr class="row single-job padd-tb-10">
+                                <td class="col-sm-4 col-xs-4">
+                                    <p><a href="#">6 Months of Registered Agent Service</a></p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <p class="color-black">$95</p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                            </tr>
+                            <tr class="row single-job padd-tb-10">
+                                <td class="col-sm-4 col-xs-4">
+                                    <p><a href="#">UPS or Fed Ex Hardcopy of Initial Filing Paperwork</a></p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <p class="color-black">$95</p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                            </tr>
+                            <tr class="row single-job padd-tb-10">
+                                <td class="col-sm-4 col-xs-4">
+                                    <p><a href="#">Deluxe LLC Kit</a></p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <p class="color-black">$85</p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                            </tr>
+                            <tr class="row single-job padd-tb-10">
+                                <td class="col-sm-4 col-xs-4">
+                                    <p><a href="#">Calendar Service</a></p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <p class="color-black">$75/yr</p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                            </tr>
+                            <tr class="row single-job padd-tb-10">
+                                <td class="col-sm-4 col-xs-4">
+                                    <p><a href="#">File Paperwork For DBA</a></p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <p class="color-black">$150</p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                            </tr>
+                            <tr class="row single-job padd-tb-10">
+                                <td class="col-sm-4 col-xs-4">
+                                    <p><a href="#">Registering as Foreign Business</a></p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <p class="color-black">$225</p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                            </tr>
+                            <tr class="row single-job padd-tb-10">
+                                <td class="col-sm-4 col-xs-4">
+                                    <p><a href="#">State Specific Requirements</a></p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <p class="color-black">Varies</p>
+                                </td>
+                                <td class="col-xs-6 text-center">
+                                    <p>Please check this box if you would like us to help you with ongoing requirements
+                                        following the formation of your company, and we will contact you to discuss
+                                        details</p>
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                            </tr>
+                            <tr class="row single-job padd-tb-10">
+                                <td class="col-sm-4 col-xs-4">
+                                    <p><a href="#">Ongoing Requirements</a></p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <p class="color-black">Varies</p>
+                                </td>
+                                <td class="col-xs-6 text-center">
+                                    <p>Please check this box if you would like us to help you with ongoing requirements
+                                        following the formation of your company, and we will contact you to discuss
+                                        details</p>
+                                    <h5 class="color-black"><input type="checkbox"/></h5>
+                                </td>
+                            </tr>
+                            <tr class="row single-job padd-tb-10">
+                                <td class="col-sm-4 col-xs-4">
+                                    <p><a href="#">Filing Wizards Review of Information Provided For Completeness,
+                                        Accuracy, and
+                                        Common Errors</a></p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <p class="color-black">Priceless</p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <h5 class="color-black">Included</h5>
+                                </td>
+
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                            </tr>
+                            <tr class="row single-job padd-tb-10">
+                                <td class="col-sm-4 col-xs-4">
+                                    <p><a href="#">Filing Wizards Customer Service</a></p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <p class="color-black">Priceless</p>
+                                </td>
+                                <td class="col-xs-2 text-center">
+                                    <h5 class="color-black">Included</h5>
+                                </td>
+
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                                <td class="col-xs-1 text-center">
+                                    <h5 class="color-black"><i class="fa fa-check color-drak-orange"></i></h5>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="mrg-top-80"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

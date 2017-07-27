@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static wagtailcore_tags %}
+
+{% block content %}
+    <div>
+        <div class="overlay padd-tb-40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ol class="breadcrumb">
+                            <li><a href="{% slugurl 'home' %}">Home</a></li>
+                            <li class="active">Privacy Policy</li>
+                        </ol>
+                        <h2 class="color-white">Privacy Policy</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="service" class="padd-60x120">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-md-push-3">
+                    <div class="service-post">
+                        <h3 class="color-black mrg-bottom-30 res-center">Privacy Policy</h3>
+                        <hr/>
+                        <div class="text justified terms">
+                            <p class="justified">Any and all written and oral communications between you and Filing
+                                Wizards are protected by our “Privacy Policy” but not by the attorney-client privilege
+                                or as work product. Filing Wizards provides access to independent attorneys and specific
+                                legal filing services only at your consent and direction. We are not a law firm or a
+                                substitute for an attorney or law firm. We do not provide any kind of advice,
+                                explanation, opinion, or recommendation about all possible legal rights, remedies,
+                                defenses, options, selection of forms or strategies. At no time do we review your
+                                answers for legal sufficiency, draw legal conclusions, provide legal advice, opinions or
+                                recommendations about your legal rights, remedies, defenses, options, selection of
+                                forms, or strategies or apply the law to the facts of your particular situation. Filing
+                                Wizards and its services are not substitutes for the advice or services of an attorney.
+                                Furthermore, the legal information contained on the site is not legal advice and is not
+                                guaranteed to be correct, complete or up-to-date. Therefore, if you need legal advice
+                                for your specific problem, or if your specific problem is too complex to be addressed by
+                                our services, you should consult a licensed attorney in your area. Your access to the
+                                website is subject to our “Terms of Use.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-md-pull-9 res-mrg-top-50">
+                    <div class="page-link">
+                        <a href="{% url 'terms' %}">Terms & Conditions</a>
+                        <a href="{% url 'disclaimer' %}">Disclaimer</a>
+                        <a class="active" href="{% url 'privacy-policy' %}">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.END SERVICE SECTION -->
+{% endblock content %}
