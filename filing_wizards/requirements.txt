@@ -13,7 +13,7 @@ djangorestframework==3.6.3
 google-api-python-client==1.6.2
 gunicorn==19.6.0
 html5lib==0.999999999
-httplib2==0.10.3
+httplib2==0.18.0
 idna==2.5
 oauth2client==4.1.0
 olefile==0.44
