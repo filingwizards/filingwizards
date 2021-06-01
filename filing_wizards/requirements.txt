@@ -33,7 +33,7 @@ rsa==3.4.2
 six==1.10.0
 Unidecode==0.4.20
 uritemplate==3.0.0
-urllib3==1.21.1
+urllib3==1.26.5
 wagtail==1.10.1
 webencodings==0.5.1
 Willow==0.4
